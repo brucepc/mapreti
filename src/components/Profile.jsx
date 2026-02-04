@@ -12,7 +12,7 @@ export default function Profile() {
       </div>
       <div className="text-center space-y-2 max-w-lg">
         <p className="text-gray-600 dark:text-gray-300 text-base font-normal">
-          Serviços de manicure profissional com qualidade e carinho.
+          Serviços de estética profissional com qualidade e carinho.
         </p>
       </div>
       <div className="w-full max-w-md pt-2">
