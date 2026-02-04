@@ -5,7 +5,7 @@ export default function Location() {
   const mapQuery = encodeURIComponent(address)
 
   return (
-    <div className="w-full max-w-md mt-4">
+    <div className="w-full max-w-lg mt-4">
       <div className="bg-white dark:bg-[#2f1616] rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-[#452222]">
         <iframe
           className="h-32 w-full"

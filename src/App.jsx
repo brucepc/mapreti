@@ -10,7 +10,7 @@ function App() {
             <main className="flex flex-col items-center justify-center min-h-screen py-14 px-5 space-y-8">
                 <Profile />
 
-                <section className="w-full max-w-md grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <section className="w-full max-w-lg grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {services.map((service, index) => (
                         <ServiceCard
                             key={index}

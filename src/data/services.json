@@ -2,21 +2,21 @@
   {
     "title": "Gel com extensão",
     "description": "Aplicação completa de unhas em gel",
-    "price": "15€"
+    "price": "25€"
   },
   {
     "title": "Gel sem extensão",
     "description": "Revestimento em gel sobre unha natural",
-    "price": "12€"
+    "price": "20€"
   },
   {
     "title": "Manutenção simples",
     "description": "Retoque e manutenção das unhas",
-    "price": "12€"
+    "price": "20€"
   },
   {
     "title": "Verniz de gel",
     "description": "Aplicação de verniz semi-permanente",
-    "price": "09€"
+    "price": "15€"
   }
 ]
