@@ -14,7 +14,7 @@ export default function Location() {
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Location Map"
+          title="Mapa de Localização"
         />
         <div className="p-4 flex items-center gap-3">
           <div className="bg-primary/10 p-2 rounded-full">
