@@ -16,10 +16,10 @@ export default function Profile() {
         </p>
       </div>
       <div className="w-full max-w-md pt-2">
-        <button className="w-full flex cursor-pointer items-center justify-center rounded-full h-14 px-6 bg-[#a30000] text-white gap-3 text-lg font-bold shadow-lg shadow-[#a30000]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#a30000]/40 hover:scale-105 hover:brightness-110">
+        <a href="https://ig.me/m/mapretti.studio" target="_blank" rel="noopener noreferrer" className="w-full flex cursor-pointer items-center justify-center rounded-full h-14 px-6 bg-[#a30000] text-white gap-3 text-lg font-bold shadow-lg shadow-[#a30000]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#a30000]/40 hover:scale-105 hover:brightness-110 no-underline">
           <span className="material-symbols-outlined text-white text-[24px]">calendar_month</span>
           <span>Agendar Horário</span>
-        </button>
+        </a>
       </div>
     </>
   )
