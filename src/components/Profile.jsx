@@ -6,7 +6,7 @@ export default function Profile() {
       <div className="relative group">
         <img
           src="/logo.svg"
-          alt="Mapreti Studio Logo"
+          alt="Mapretti Studio Logo"
           className="h-48 object-contain"
         />
       </div>

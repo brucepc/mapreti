@@ -14,7 +14,7 @@ export default function Footer() {
         <span className="material-symbols-outlined text-[28px]">photo_camera</span>
       </a>
       <p className="text-xs text-gray-400 dark:text-gray-500">
-        © {currentYear} Mapreti Studio. Todos os direitos reservados.
+        © {currentYear} Mapretti Studio. Todos os direitos reservados.
       </p>
     </div>
   )
