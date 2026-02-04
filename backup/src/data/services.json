@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Logo Design",
+    "description": "Concept, Variations & Guidelines",
+    "price": "$450",
+    "icon": "favorite"
+  },
+  {
+    "title": "Brand Identity",
+    "description": "Full Suite, Typography & Assets",
+    "price": "$850",
+    "icon": "favorite"
+  },
+  {
+    "title": "Web Design",
+    "description": "UI/UX, 5 Pages, Responsive",
+    "price": "$1,200",
+    "icon": "favorite"
+  },
+  {
+    "title": "Social Media Kit",
+    "description": "Templates, Icons & Highlights",
+    "price": "$300",
+    "icon": "favorite"
+  }
+]
