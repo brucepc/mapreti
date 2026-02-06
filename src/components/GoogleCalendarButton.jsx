@@ -83,7 +83,44 @@ const GoogleCalendarButton = () => {
         }
 
         return () => observer.disconnect();
-    }, [isLoaded]);
+    });
+
+    // Observer to watch for the MODAL injection in the BODY (robustness fix)
+    useEffect(() => {
+        const bodyObserver = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                mutation.addedNodes.forEach((node) => {
+                    // Check if node is an Element (type 1)
+                    if (node.nodeType === 1) {
+                        // Check if this node looks like the Google Calendar Overlay
+                        // It should contain an iframe with the google calendar URL
+                        const iframe = node.querySelector && node.querySelector('iframe[src*="calendar.google.com"]');
+
+                        if (iframe) {
+                            // This node is the Overlay
+                            node.classList.add('gcal-custom-overlay');
+
+                            // Now find the children: content container and close button
+                            Array.from(node.children).forEach(child => {
+                                // If this child contains the iframe, it's the frame container
+                                if (child.contains(iframe) || child === iframe) {
+                                    child.classList.add('gcal-custom-frame-container');
+                                } else {
+                                    // Otherwise, it's likely the close button
+                                    // We can double check if it's small/positioned, but typically there's only the frame and the close button.
+                                    child.classList.add('gcal-custom-close');
+                                }
+                            });
+                        }
+                    }
+                });
+            });
+        });
+
+        bodyObserver.observe(document.body, { childList: true });
+
+        return () => bodyObserver.disconnect();
+    }, []);
 
     return (
         <div ref={containerRef} className="w-full relative flex flex-col">

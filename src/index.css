@@ -47,3 +47,29 @@
 .google-calendar-button-container .calendar-scheduling-button svg {
     fill: white !important;
 }
+
+/* Google Calendar Modal Overrides for Mobile */
+@media (max-width: 640px) {
+
+    /* Overlay container - remove huge 72px padding */
+    .gcal-custom-overlay {
+        padding: 16px !important;
+        /* Also ensure z-index is high enough */
+        z-index: 99999 !important;
+    }
+
+    /* Close button - reposition */
+    .gcal-custom-close {
+        top: 10px !important;
+        right: 16px !important;
+        /* Reduce size slightly if needed */
+        height: 32px !important;
+        padding: 8px !important;
+    }
+
+    /* Iframe container - ensure full available height */
+    .gcal-custom-frame-container {
+        height: 100% !important;
+        border-radius: 8px !important;
+    }
+}
