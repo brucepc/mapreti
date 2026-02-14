@@ -21,7 +21,7 @@ function App() {
                     ))}
                 </section>
 
-                <Location />
+                {/* <Location /> */}
                 <Footer />
             </main>
         </div>
