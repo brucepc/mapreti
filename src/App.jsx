@@ -2,6 +2,7 @@ import Profile from './components/Profile'
 import ServiceCard from './components/ServiceCard'
 import Location from './components/Location'
 import Footer from './components/Footer'
+import CookieBanner from './components/CookieBanner'
 import services from './data/services.json'
 
 function App() {
@@ -17,12 +18,14 @@ function App() {
                             title={service.title}
                             description={service.description}
                             price={service.price}
+                            originalPrice={service.originalPrice}
                         />
                     ))}
                 </section>
 
-                {/* <Location /> */}
+                <Location />
                 <Footer />
+                <CookieBanner />
             </main>
         </div>
     )

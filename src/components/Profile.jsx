@@ -17,7 +17,7 @@ export default function Profile() {
         </p>
       </div>
       <div className="w-full max-w-md pt-2 flex flex-col gap-4">
-        {/* <GoogleCalendarButton /> */}
+        <GoogleCalendarButton />
         <a href="https://ig.me/m/mapretti.studio" target="_blank" rel="noopener noreferrer" className="w-full flex cursor-pointer items-center justify-center rounded-full h-14 px-6 bg-[#a30000] text-white gap-3 text-lg font-bold shadow-lg shadow-[#a30000]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#a30000]/40 hover:scale-105 hover:brightness-110 no-underline">
           <span className="material-symbols-outlined text-white text-[24px]">chat</span>
           <span>Fale conosco</span>
